@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<h2>{{ page_title }}</h2>
+<p>The Marvel Cinematic Universe is a media franchise created by Marvel Studios and set primarily in a shared universe,
+with some installments also set in adjacent or branching realities.</p> 
+<p>Starting with Iron Man, the franchise is comprised mainly of films independently made by Marvel Studios, that are
+primarily set within this same universe, much like Marvel has done with their comics.</p>
+<p>The franchise includes a series of short films, called Marvel One-Shots, launched with several films' Blu-ray releases
+starting with Thor and finishing with Thor: Ragnarok.</p>
+<p>Starting with Agents of S.H.I.E.L.D., the franchise expanded into television series, including series premiered on the
+ABC and Freeform channels, and on the Netflix, Hulu, and Disney+ streaming platforms. The franchise also includes the
+news program WHiH Newsfront and the digital series Agents of S.H.I.E.L.D.: Slingshot.</p> 
+<p>Other contents include a series of tie-in Comics and video games, released as promotional material to the films and
+series and therefore part of the franchise, even if some of them are set on these branching realities.</p>
+
+  {% for member in company %}
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h3>{{ member.name }}</h3>
+        <p>{{ member.description }}</p>
+      </div>
+      <div class="col-md-5">
+        <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+  {% endfor %}
+{% endblock %}

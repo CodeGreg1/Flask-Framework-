@@ -1,0 +1,9 @@
+body {
+}
+.col-md-5 img{
+  width:100%;
+  max-height: 500px;
+}
+.row.featurette {
+  margin-top: 30px;
+}
