@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../../Flask Proj/Flask-Proj"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../__pycache__"
+		},
+		{
+			"path": "../data"
+		},
+		{
+			"path": "../static"
+		}
+	],
+	"settings": {
+		"files.autoSave": "off",
+		"workbench.colorTheme": "Visual Studio Dark",
+		"terminal.integrated.gpuAcceleration": "canvas"
+	}
+}
